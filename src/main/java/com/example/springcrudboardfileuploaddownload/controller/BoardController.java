@@ -49,7 +49,7 @@ public class BoardController {
         boardService.updatePost(boardId, reqDto);
     }
 
-    /*파일 링크 클릭 시 파일 저장 링크*/
+    /*파일 링크 클릭 시 파일 저장*/
     @GetMapping("/files/{fileName}")
     public ResponseEntity<?> downloadFile(@PathVariable("fileName") String fileName,
                                           HttpServletRequest request) throws IOException {
